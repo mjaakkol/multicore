@@ -80,9 +80,9 @@ static int settings_runtime_load(void)
 
 int main(void)
 {
-	int err;
+	printk("application core: build time: " __DATE__ " " __TIME__ "\n");
 
-	err = bt_enable(NULL);
+	int err = bt_enable(NULL);
 	if (err) {
 		printk("Bluetooth init failed (err %d)\n", err);
 		return 0;
