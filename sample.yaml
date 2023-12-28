@@ -1,7 +1,7 @@
 sample:
   name: Multicore Hello World
-  description: Hello World application that builds remote core from sources.
-               Both cores prints board name they were run on.
+  description: Hello World application that builds application and notecore from sources.
+
 tests:
   sample.multicore.hello_world:
     build_only: true
