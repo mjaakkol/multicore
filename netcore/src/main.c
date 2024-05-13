@@ -380,7 +380,7 @@ int main(void)
 
 	printk("netcore: build time: " __DATE__ " " __TIME__ "\n");
 
-	const struct device *hci_ipc_instance = DEVICE_DT_GET(DT_CHOSEN(zephyr_bt_hci_rpmsg_ipc));
+	const struct device *hci_ipc_instance = DEVICE_DT_GET(DT_CHOSEN(zephyr_bt_hci_ipc));
 
 	/* incoming events and data from the controller */
 	static K_FIFO_DEFINE(rx_queue);
